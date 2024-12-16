@@ -28,7 +28,7 @@ exports.config = {
     specs: [
         // './test/specs/**/*.js',
         fileUpload,
-        // logIn
+        logIn
     ],
     // Patterns to exclude.
     exclude: [

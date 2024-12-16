@@ -1,0 +1,16 @@
+{
+    
+    "loginSuccessMgs" : "Logging in has been successful and you will be redirected.",
+    
+    "urls":{
+        "baseURL": "https://qatest.marcombox.com/#/Login?"
+    }, 
+
+    "testData":{
+        "userEmail": "sash.dqa@gmail.com",
+        "password": "Talha1234",
+        "title": "QA Automation",
+        "modifiedTitle": "QA Automation Engineer"
+    }
+
+}

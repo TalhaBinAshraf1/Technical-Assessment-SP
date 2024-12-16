@@ -1,0 +1,38 @@
+{
+  "name": "technical-assessment-sp",
+  "version": "1.0.0",
+  "description": "Skill assessment task for SP",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run ./wdio.conf.js",
+    "local": "npx wdio run ./local.conf.js",
+    "getReport": "npx allure generate --clean allure-results && npx allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalhaBinAshraf1/Technical-Assessment-SP.git"
+  },
+  "keywords": [
+    "WDIO",
+    "JS",
+    "Web Automation",
+    "POM",
+    "Allure"
+  ],
+  "author": "Talha Bin Ashraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TalhaBinAshraf1/Technical-Assessment-SP/issues"
+  },
+  "homepage": "https://github.com/TalhaBinAshraf1/Technical-Assessment-SP#readme",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.4.2",
+    "@wdio/cli": "^9.4.2",
+    "@wdio/local-runner": "^9.4.2",
+    "@wdio/mocha-framework": "^9.4.2",
+    "chai": "^5.1.2",
+    "allure-commandline": "^2.32.0",
+    "wdio-lambdatest-service": "^3.0.3",
+    "wdio-wait-for": "^3.0.11"
+  }
+}

@@ -24,7 +24,8 @@ class FileUploadActions {
         await fileUploadObjects.assets.waitForDisplayed({ timeout: 15000 });
         const isAssetsIsDisplayed = await fileUploadObjects.assets.isDisplayed()
         expect(isAssetsIsDisplayed).to.equal(true);
-        report.step(`User able to click on Assets button`)
+        await driver.pause(4000);
+        report.step(`User able to click on Assets button`);
 
         return await fileUploadObjects.assets.click();
     }
@@ -113,7 +114,7 @@ class FileUploadActions {
     }
 
     async deleteTheFileIfExist() {
-        await fileUploadObjects.uploadedFileName.waitForClickable({ timeout: 15000 });
+       await driver.pause(4000);
         const isImageIsDisplayed = await fileUploadObjects.uploadedFileName.isDisplayed();
         return isImageIsDisplayed ? await this.deleteTheExistingImage() : console.log("Upload the image !!!")
     }
@@ -226,6 +227,7 @@ class FileUploadActions {
         await this.setTitle(testData.title);
         await this.clickOnPleaseSelect();
         await this.setTypeImage();
+        await driver.pause(5000);
         await this.getTextFromUploadedFile();
         await this.clickOnSave();
         await driver.pause(5000);

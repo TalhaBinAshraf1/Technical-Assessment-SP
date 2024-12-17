@@ -16,9 +16,7 @@ describe('Login, Validate File Upload, Modify File Title, Share File', () => {
         await fileUploadAction.validateThatUserCanEditTheTitle();
     });
 
-    it('Validate user able to Share File', async () => {
-        await fileUploadAction.clickOnDAM();
-        await fileUploadAction.clickOnAssets();
+    it('Validate user able to Share File', async () => {               
         await fileUploadAction.validateUserCanShareFile();
     });
 });

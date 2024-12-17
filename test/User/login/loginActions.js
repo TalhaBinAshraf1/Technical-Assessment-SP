@@ -50,6 +50,7 @@ class LoginActions {
         await loginObjects.loginButton.waitForDisplayed({ timeout: 5000 });
         const isLoginButtonIsDisplayed = await loginObjects.loginButton.isDisplayed()
         expect(isLoginButtonIsDisplayed).to.equal(true);
+        await driver.pause(2000);
         report.step(`User able to click on Login button`)
 
         return await loginObjects.loginButton.click();
@@ -58,6 +59,7 @@ class LoginActions {
     async validateTheUserAvatarAfterLogin() {
         await loginObjects.userAvatar.waitForDisplayed({ timeout: 10000 })
         const isUserAvatarIsDisplayed = await loginObjects.userAvatar.isDisplayed();
+        await driver.pause(2000);
         expect(isUserAvatarIsDisplayed).to.equal(true);
 
         report.step(`Login Success, Avatar validated !!`);

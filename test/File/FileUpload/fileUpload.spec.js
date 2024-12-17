@@ -7,10 +7,14 @@ describe('Login, Validate File Upload, Modify File Title, Share File', () => {
         await loginActions.validateLoginWithValidCredential();
     });
 
-    it('Validate user able to Upload Image File', async () => {
+    it('Validate user able to Upload Image File ', async () => {
         await fileUploadAction.validateTheImageFileUpload();
         await fileUploadAction.validateTheUploadedFile();
-    })
+    });
+
+    it('Validate the Upload Image File after Upload', async () => {
+        await fileUploadAction.validateTheUploadedFile();
+    });
 
     it('Validate user able to Edit File Title', async () => {
         await fileUploadAction.validateThatUserCanEditTheTitle();

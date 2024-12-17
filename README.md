@@ -1,10 +1,11 @@
-**To run this project: ** 
+**To run this Project:** 
  1. Clone the repository. </br>
  2. Install the project dependency by this command **" npm i "** in terminal. </br>
  3. Run the specs by this command **"npm run local"**. </br>
  4. To get the report, run this command **"npm run getReport"** </br>
 
 **Test Scenario's :** </br>
+
 **1. Login::** </br>
    1.1 - Validate User able to login with Valid credential. </br>
 
@@ -14,7 +15,11 @@
    2.3 - Validate user able to Edit File Title. </br>
    2.4 - Validate user able to Share File. </br>
 
-**Test Run Attachment:** </br>
+**Automation Run Attachment:** </br>
+
+
+https://github.com/user-attachments/assets/2cf0d9e8-a42a-4f02-bf7d-5f81bb6c418b
+
 
 **Allure Report Screen shoot's:** </br>
 

@@ -18,7 +18,7 @@ class LoginObjects {
     }
 
     get userAvatar(){
-        return $('(//div[@class="css-0"])[2]')
+        return $('(//div[@class="css-0"])[2]');
     }
 
 }
